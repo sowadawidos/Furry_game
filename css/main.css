@@ -1,0 +1,95 @@
+main {
+    transition: all .5s ease-in-out;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 64px);
+    grid-template-rows: repeat(10, 64px);
+    border-bottom: 1px solid #bcbcbc;
+    border-right: 1px solid #bcbcbc;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.game-board div {
+    border-top: 2px solid #bcbcbc;
+    border-left: 2px solid #bcbcbc;
+}
+
+.game-board .furry {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-image: url("../images/monster.svg");
+    transition: 0.5s;
+}
+
+.game-board .coin {
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: center;
+    background-image: url('../images/bitcoin.svg');
+}
+
+.game-over {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding: 10px;
+    background-color: rgba(243, 190, 77, .75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.game-over .display-1 {
+    font-size: 36px;
+}
+
+.game-over .h2 {
+    font-size: 26px;
+}
+
+.game-over .btn-info {
+    padding: 10px 25px;
+    background-color: transparent;
+    font-weight: 600;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.game-over .btn-info:hover {
+    transform: scale(1.2);
+}
+
+.game-over.hide {
+    display: none;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box {
+    width: 400px;
+    height: 90px;
+    border: 1px solid #bcbcbc;
+    box-shadow: 0 0 20px #bcbcbc;
+    margin-bottom: 40px;
+    background-color: #F8E9B1;
+}
+.box-body {
+    font-size: 18px;
+    text-align: center;
+}
+.box-header {
+    font-size: 26px;
+    text-align: center;
+}
