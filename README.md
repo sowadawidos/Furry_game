@@ -1,5 +1,5 @@
 ## Furry game
-Simple game based on collecting coins to score points.
+Simple game based on collecting coins to score points. To move your character you need to use your keys on keyboard.
 
 # Technology
 - HTML
